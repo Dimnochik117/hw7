@@ -1,0 +1,51 @@
+.button__menu {
+    text-align: center;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    max-width: 1600px;
+    background-color: #000000;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), 
+rgba(47, 48, 58, 0.4)),
+        url(../images/background.jpg);
+    background-position: center;
+    background-size: cover;
+
+    margin: 0 auto;
+    padding-top: 200px;
+    padding-bottom: 200px;
+
+}
+
+.button__tittle {
+    text-transform: uppercase;
+    max-width: 696px;
+    display: block;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    color: var(--normal-color);
+
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.button__start {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color: var(--normal-color);
+    background: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: 0px;
+    border-radius: 4px;
+    transition: color var(--time-duration), background-color var
+(--time-duration);
+
+    padding: 10px 32px;
+    &:hover, &:focus{
+        background: rgba(33, 150, 243, 1);
+color: var(--normal-color);
+    }
+}

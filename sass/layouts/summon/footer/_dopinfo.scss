@@ -1,0 +1,44 @@
+.dopinfo {
+    margin-left: 70px;
+}
+
+.dopinfo__text {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--normal-color);
+
+    margin: 0% auto;
+}
+
+.dopinfo__item {
+    margin-top: 20px;
+    display: flex;
+    justify-items: center;
+    gap: 10px;
+}
+
+.dopinfo__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color var(--time-duration);
+    border-radius: 50%;
+    &:hover, &:focus{
+        background-color: var(--accent-color);
+    }
+}
+
+.dopinfo__icon {
+    fill: var(--normal-color);
+    transition: fill var(--time-duration);
+    .dopinfo__link:hover &, .dopinfo__link:focus &{
+        fill: var(--normal-color);
+    }
+}

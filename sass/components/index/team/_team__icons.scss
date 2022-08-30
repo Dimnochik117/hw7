@@ -1,0 +1,29 @@
+.icon__item {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.icon__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    background-color: transparent;
+    border-radius: 50%;
+    transition: background-color var(--time-duration);
+    &:hover, &:focus{
+        background-color: var(--accent-color);
+    }
+}
+
+
+.icon__team {
+    fill: #AFB1B8;
+    transition: fill var(--time-duration);
+    
+    .icon__link:hover &, .icon__link:focus &{
+        fill: var(--normal-color);
+    }
+}

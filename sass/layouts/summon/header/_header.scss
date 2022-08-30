@@ -1,0 +1,105 @@
+.header {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ECECEC;
+    background-color: var(--normal-color)
+}
+
+.header__logo {
+    text-decoration: none;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--accent-color);
+    transition: color var(--time-duration);
+}
+
+.header__lg {
+    text-decoration: none;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--primary-color)
+}
+
+.nav {
+    display: flex;
+    margin-left: 93px;
+}
+
+.nav__item {
+    display: flex;
+    gap: 50px;
+}
+
+.nav__link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    list-style: none;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--primary-color);
+    transition: color var(--time-duration);
+}
+
+.navig {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+    gap: 50px;
+}
+
+.navig__link {
+    display: flex;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--minor-color);
+    justify-content: center;
+    align-items: center;
+    padding: 1px;
+    transition: color var(--time-duration);
+    &:hover, &:focus{
+        color: var(--accent-color)
+    }   
+}
+
+.navig__icon {
+    fill: #757575;
+    margin-right: 10px;
+    transition: fill var(--time-duration);
+    .navig__link:hover &, .navig__link:focus &{
+        fill: var(--accent-color);
+    }
+}
+
+.current {
+    color: var(--accent-color);
+}
+
+.nav__link.current {
+    position: relative;
+    &::after{
+        content: "";
+display: block;
+width: 100%;
+height: 4px;
+border-radius: 2px;
+background-color: currentColor;
+position: absolute;
+bottom: -1px;
+    }
+}
