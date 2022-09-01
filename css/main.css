@@ -840,7 +840,7 @@ ul {
   background-color: var(--secondary-color);
   border: 1px solid transparent;
   border-radius: 4px;
-  transition: background-color var(--time-duration), var --time-duration;
+  transition: background-color var(--time-duration), color var(--time-duration);
 }
 .portfolio__button:hover, .portfolio__button:focus {
   background-color: var(--accent-color);
