@@ -4,6 +4,9 @@
     appearance: none;
 
     position: absolute;
+    &:focus +.check__text span{
+        border-color:var(--accent-color)
+    }
 }
 
 
@@ -18,7 +21,7 @@
     justify-content: center;
     align-items: center;
     margin-top: 20px;
-
+    margin-bottom: 30px;
 }
 
 .check__text span {
@@ -34,6 +37,7 @@
     transition: border-color var(--time-duration), 
 background-color var(--time-duration);
 }
+
 
 .check__true {
     fill: transparent;

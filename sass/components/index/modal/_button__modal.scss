@@ -11,12 +11,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.modal__icon {
-    fill: #000000;
     transition: fill var(--time-duration);
     &:hover, &:focus{
         fill: var(--accent-color);
     }
 }
+

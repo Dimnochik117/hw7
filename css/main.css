@@ -396,13 +396,9 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.modal__icon {
-  fill: #000000;
   transition: fill var(--time-duration);
 }
-.modal__icon:hover, .modal__icon:focus {
+.button__modal:hover, .button__modal:focus {
   fill: var(--accent-color);
 }
 
@@ -411,6 +407,17 @@ ul {
 }
 
 .input__tittle {
+  display: block;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: var(--minor-color);
+  margin-bottom: 4px;
+  margin-top: 10px;
+}
+
+.input__tittle__plus {
   display: block;
   font-weight: 400;
   font-size: 12px;
@@ -490,6 +497,9 @@ ul {
   appearance: none;
   position: absolute;
 }
+.input__check:focus + .check__text span {
+  border-color: var(--accent-color);
+}
 
 .check__text {
   font-weight: 400;
@@ -501,6 +511,7 @@ ul {
   justify-content: center;
   align-items: center;
   margin-top: 20px;
+  margin-bottom: 30px;
 }
 
 .check__text span {
@@ -556,6 +567,7 @@ ul {
 }
 
 .modal__button {
+  display: block;
   background: #188CE8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -564,10 +576,9 @@ ul {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  color: var(--normal-color);
+  color: #ffffff;
   padding: 10px 52px;
-  margin-top: 30px;
-  margin-left: 125px;
+  margin: 0 auto;
 }
 
 .button__menu {
